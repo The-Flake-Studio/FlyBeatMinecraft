@@ -1,0 +1,33 @@
+# Node
+node_modules/
+npm-debug.log*
+bot-bridge/*.log
+
+# Runtime logs from local bot/training processes
+logs/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# Cached connectome data (large, fetched via neuprint-python)
+data/*
+!data/.gitkeep
+
+# Editors / OS
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+*.token
+
+# Local Minecraft test server + portable JDK (large binaries, machine-specific)
+.mc-server/
+.mc-server-*/
+.toolchain/
